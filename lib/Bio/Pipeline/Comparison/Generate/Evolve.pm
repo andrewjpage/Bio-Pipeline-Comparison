@@ -135,6 +135,16 @@ sub _build__base_change_probability {
             'A' => 0.22,
             'G' => 0.22,
             'T' => 0.56
+        },
+       'G' => {
+            'A' => 0.50,
+            'C' => 0.25,
+            'T' => 0.25
+        }    ,
+       'T' => {
+            'A' => 0.25,
+            'C' => 0.50,
+            'G' => 0.25
         }
     };
     return $change_probability;
