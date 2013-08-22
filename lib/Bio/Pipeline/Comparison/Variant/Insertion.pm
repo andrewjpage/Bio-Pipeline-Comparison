@@ -15,9 +15,8 @@ use Moose;
 use Bio::SeqIO;
 use Bio::Pipeline::Comparison::Generate::VCFWriter;
 
-has 'start_coord'         => ( is => 'ro', isa => 'Int', required => 1 );
-has 'end_coord'           => ( is => 'ro', isa => 'Int', required => 1 );
-has 'target_start_coord'  => ( is => 'ro', isa => 'Int', required => 1 );
+has 'start_coord'           => ( is => 'ro', isa => 'Int', required => 1 );
+has 'alternative_bases'     => ( is => 'ro', isa => 'Str', required => 1 );
 
 no Moose;
 __PACKAGE__->meta->make_immutable;
